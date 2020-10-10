@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet"/>
-    
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="icon" href="images/Checkmark.svg" sizes="16x16" type="image/svg+xml">
-    <link rel="icon" href="images/Checkmark-1.svg" sizes="16x16" type="image/svg+xml"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Checkmark.svg" sizes="16x16" type="image/svg+xml">
+    <link rel="icon" href="images/Checkmark-1.svg" sizes="16x16" type="image/svg+xml">
 
     <title>Document</title>
 </head>
@@ -16,33 +15,19 @@
     
 
 <header class='header'>
-    
-       
-    
-        <nav class='header-nav'>
-        
-              <h1 class='nav-logo'>Best Shop</h1>   
-            <ul class="nav-menu" id='menu'>
-                <li><a href="#">Why Us</a></li>
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Contact</a></li>
+    <div class="container">
+        <div class='logo'>
+            <h1>Best Shop</h1>   
+        </div>
+        <nav>
+            <ul class="menu" id='menu'>
+                <li><a class='menu__btn' href="#">Why Us</a></li>
+                <li><a class='menu__btn' href="#">Benefits</a></li>
+                <li><a class='menu__btn' href="#">Prices</li>
+                <li><a class='menu__btn' href="#">Contact</li>
             </ul>
-            <!-- <div class="nav-burger">
-                <div class="nav-burger__line1"></div>
-                <div class="nav-burger__line2"></div>
-                <div class="nav-burger__line3"></div>
-            </div> -->
-            <div id="nav-icon1">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            
-             
-              
         </nav>
-   
+    </div>
 </header>
 <main>
     <section class ='seemore'>
@@ -51,8 +36,7 @@
             <p>Open shop on our platform and increase your sales</p>
             <a class='seemore__btn' href="#">Open your shop</a>
         </div>
-        
-        <img class ='banner' alt='' src="images/Background.png">
+        <img class ='banner' src="images/Background.png">
 
     </section>
 
@@ -85,61 +69,50 @@
         </div>
     </div>
     </section>
-    <section class='offer'>
-        <div class='offer-inner'>
-            <div class='first contain'>
-                <div class='offer-content'>
-                    <h2>Be always first</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam.
-                    </p>
-                    <div class='line  first__line'></div>        
-                </div>
-                <div class="img-container laptop">
-                    <img src="images/Macbook.png" />
-                </div>
-            </div>
-            <div class='secound contain'>
-                <div class='offer-content'>
-                    <h2>Your shop is where you are!?</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam.
-                    </p>
-                    <div class='line secound__line'></div>
-                </div>
-                <div class="img-container phone">
-                    <img src="images/iPhone.png" />
-                </div>
-            </div>
-            <div class='last__two'>
-            <div class ='third contain'>
-                    <div class='offer-content'>
-                        <h2>Increase recognition your brand!</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam.
-                        </p>
-                        <div class='line third__line'></div>
-                    </div>
-            </div>
-            <div>
-                    <img class='trumpet' src="images/Trumpet.png" />
-            </div>
+<section class='benefit'>
+    <div class='offer'>
+        <div class='first contain'>
+            
+            <h2>Be always first</h2>
+            <p>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.
+            </p>
+            <div class='first__line'></div>
+            <img class='laptop' src="images/Macbook.png">
         </div>
+        <div class='secound contain'>
+            <h2>Your shop is where you are</h2>
+            <p>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.
+            </p>
+            <div class='secound__line'></div>
+            <img class="phone" src="images/iPhone.png">
         </div>
-    </section>
-    
+        <div class ='third contain'>
+            <h2>Increase recognition your brand!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.
+            </p>
+            <div class='third__line'></div>
+        </div>
+        <div>
+            <img class='trumpet' src="images/Trumpet.png">
+        </div>
+    </div>
+</section>
+
 <section class='pricing'>
     <h2>Pricing</h2>
     <div class="pricing__content">
@@ -232,18 +205,8 @@
 
 </main>
 <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__info">
-        <h2>BestShop</h2>
-        <p class="footer__info rights">© 2019 BestShop LTD, All Rights Reserved</p>
-      </div>
-      <div class="footer__icons">
-        <a href="#"><img src="/images/Twitter.svg" alt="twitter"/></a>
-        <a href="#"><img src="/images/Facebook.svg" alt="facebook"/></a>
-      </div>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="/main.js"></script>
+
+</footer>
+
 </body>
 </html>
